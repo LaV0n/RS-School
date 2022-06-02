@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter</title>
+    <link  rel="stylesheet" href="/pages/main/style.css">
+</head>
+<body>
+    <div class="start-screen">
+    <header>
+        <h1>Cozy House</h1>
+        <p>Shelter for pets in Boston</p> 
+        <div class="humburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+       
+        <div id="panel">
+            <a href="#about" class="panel-link" style="text-decoration: underline; text-decoration-color: #F1CDB3; text-decoration-thickness: 3px">About the shelter</a>
+            <a href="/pages/pets/index.html" class="panel-link">Our pets</a>
+            <a href="#help" class="panel-link">Help the shelter</a>
+            <a href="#footer" class="panel-link">Contacts</a>
+        </div>  
+        </div>   
+    </header>
+    <div class="start-content">
+        <div>
+            <h2>Not only people </br>need a house</h2>
+            <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
+                 He or she will love you more than anybody else in the world, you will see!</p>
+            <a href="#pets"><button class="button-primary button-make-friend" >Make a friend</button></a>
+        </div>
+        <img src="/assets/images/start-screen-puppy.png" alt="0" class="start-puppy">
+        
+    </div>
+    </div>
+    <div id="about">
+        <img src="/assets/images/about-pets.png" alt="0" class="about-pets">
+        <div>
+            <h3>About the shelter “Cozy House”</h3>
+            <p style="height: 96px; top: 115px;">Currently we have 121 dogs and 342 cats 
+                on our hands and statistics show that only 20% of them will find a family. 
+                The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+            <p style=" height: 144px; top: 236px;">We feed our wards with the best food and make sure that they do not get sick, feel comfortable 
+                (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels.
+                 About 12% of the animals are taken by the shelter staff. Taking care of the animals, 
+                 they become attached to the pets and would hardly ever leave them alone.</p>
+        </div>
+    </div>
+    <div id="pets">
+        <h3 class="our-friends">Our friends who</br> are looking for a house</h3>
+         <button class="button-prev" onclick="slider()"></button>
+          <button class="button-next" onclick="slider()"></button>
+        <div class="slider">           
+             <div class="card" id="card_1">
+                 <img src="" alt="0">
+                 <p id="card_1_name">12</p>
+                 <button id="button-modal" onclick="openModal('card_1_name')"> Learn more </button>                 
+             </div>   
+             <div class="card" id="card_2">
+                <img src="" alt="0">
+                <p id="card_2_name">Katrine</p>
+                <button id="button-modal" onclick="openModal('card_2_name')">Learn more</button>
+            </div>  
+            <div class="card" id="card_3">
+                <img src="" alt="0">
+                <p id="card_3_name">Woody</p>
+                <button id="button-modal" onclick="openModal('card_3_name')">Learn more</button>
+            </div> 
+        </div>  
+        <div class="block-button">
+        <a href="/pages/pets/index.html"><button class="button-primary button-get-rest" >Get to know the rest</button></a>  
+        </div>       
+    </div>
+    <div id="help">
+        <h3 >How you can help </br>
+            our shelter</h3>
+        <div class="list">
+            <div>
+            <img src="/assets/icons/icon-pet-food.svg" alt="0">
+            <p>Pet food</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-transportation.svg" alt="0">
+            <p>Transportation</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-toys.svg" alt="0">
+            <p>Toys</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-bowls-and-cups.svg" alt="0">
+            <p>Bowls and cups</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-shampoos.svg" alt="0">
+            <p>Shampoos</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-vitamins.svg" alt="0">
+            <p>Vitamins</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-medicines.svg" alt="0">
+            <p>Medicines</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-collars-leashes.svg" alt="0">
+            <p>Collars / leashes</p>
+            </div>
+            <div>
+            <img src="/assets/icons/icon-sleeping-area.svg" alt="0">
+            <p>Sleeping areas</p>
+            </div>
+        </div>
+    </div>
+    <div class="donations">
+        <img src="/assets/images/donation-dog.png" alt="0" class="donation-dog">
+        <div class="donation-content">
+            <h3>You can also </br>make a donation</h3>
+            <p class="bank-name">Name of the bank / Type of bank account</p>         
+            <a href="" id="card" >  <img src="/assets/icons/credit-card.svg" alt="0" class="icon-card">8380 2880 8028 8791 7435</a>    
+                  
+            <p class="card-info">Legal information and lorem ipsum dolor sit amet,
+                 consectetur adipiscing elit. Maecenas a ipsum at libero 
+                 sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. 
+                 Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </div>
+    <footer id="footer">  
+        <div class="questions">
+            <h3 >For questions and suggestions</h3>            
+            <a href = "mailto: email@shelter.com" class="email"> <img src="/assets/icons/icon-email.svg" alt="0" class="icon-email">email@shelter.com</a>
+            <a href="tel:+13 674 567 75 54" class="phone"><img src="/assets/icons/icon-phone.svg" alt="0" class="icon-phone"> +13 674 567 75 54</a>
+        </div>
+        <div class="adress">
+            <h3> We are waiting for your visit</h3>
+            <a href="https://www.google.com/maps/@53.899678,27.5450837,17z" target="_blank" class="map-point" style="top: 124px;"><img src="/assets/icons/icon-marker.png" alt="0" class="icon-marker"> 1 Central Street, Boston (entrance from the store)</a>
+            <a href="https://www.google.com/maps/@53.899678,27.5450837,17z" target="_blank" class="map-point" style="top: 202px;"><img src="/assets/icons/icon-marker.png" alt="0" class="icon-marker"> 18 South Park, London </a>
+        </div>
+        <div class="footer-dog"></div>
+    </footer>
+    <div class="modal" id="modal">
+        <img src="/assets/images/pets-jennifer.png" alt="0" id="modal-img">
+       <div class="pets-info">
+           <div id="pets-name">Jennifer</div>
+           <div style="display: flex;"> 
+            <h4 id="pets-type">Dog </h4>
+            <p>&nbsp;-&nbsp;</p>
+            <h4 id="pets-breed">Labrador</h4>
+           </div>
+           <div id="description">Jennifer is a sweet 2 months old Labrador that is 
+               patiently waiting to find a new forever home. This 
+               girl really enjoys being able to go outside to run and play,
+                but won't hesitate to play up a storm in the house if she 
+                has all of her favorite toys.</div>
+           <ul class="pets-list">
+               <li ><b>Age:</b> <span id="pets-age"></span></li>
+               <li ><b>Inoculations:</b><span id="pets-inoculations"></span></li>
+               <li ><b>Diseases:</b> <span id="pets-diseases"></span></li>
+               <li ><b>Parasites:</b><span id="pets-parasites"></span></li>
+           </ul>                        
+       </div>
+       <button class="close-button" id="close-button" onclick="closeModal()">&times;</button>
+    </div>
+    <div id="overlay"></div>
+    <script src="/pages/main/script.js"></script>
+</body>
+</html>
